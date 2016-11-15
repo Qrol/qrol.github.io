@@ -1,0 +1,47 @@
+<html>
+<head>
+
+	<script>
+	
+	var war = "";
+	
+	function dod1(){
+	war = war + "1";
+	}
+	function dod3(){
+	war = war + "3";
+	}
+	function dod7(){
+	war = war + "7";
+	}
+	
+	function cout(){
+	document.write(war);
+	}
+	setInterval(check, 2);
+	function check(){
+	if(war == "1337"){
+	document.write("nice ");
+	}}
+	
+	</script>
+</head>
+
+<body>
+<center>
+	<img src="numb/num0.png">
+	<img src="numb/num1.png" onclick="dod1()">
+	<img src="numb/num2.png">
+	<img src="numb/num3.png" onclick="dod3()">
+	<img src="numb/num4.png">
+	<img src="numb/num5.png">
+	<img src="numb/num6.png">
+	<img src="numb/num7.png" onclick="dod7()">
+	<img src="numb/num8.png">
+	<img src="numb/num9.png">
+	
+	<button onclick="cout()">Sth</button>
+	
+</center>
+</body>
+</html>
