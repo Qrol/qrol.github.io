@@ -1,0 +1,16 @@
+.sec1{
+  background: #000 url('http://viemagazine.com/wp-content/uploads/2015/10/vie-magazine-parrots-feature.jpg');
+  background-size: cover;
+  /*#FF8F5E;*/
+  background-position: center top;
+  margin-top: -120px;
+  min-height: 700px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align:center;
+}
+.motto-title{
+  position: relative;
+  color: #FFFFFF;
+  top: 70px;
+}
