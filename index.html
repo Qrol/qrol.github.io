@@ -19,7 +19,10 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
+
 </head>
+
+
 <body>
 
 
@@ -35,10 +38,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!--<div class="logo-container">
-        <div class="logo">-->
-
-        <!--</div>-->
 
       <a href="#" class="navbar-left">
         <img class="img-responsive img-thumbnail" alt="logo.jpg" style="max-height: 50px; padding: 0 0;position: relative; top: 10px; left: -8px" src="https://ae01.alicdn.com/kf/HTB1A.5dPFXXXXXFXXXXq6xXFXXXH/12cm-15-1cm-font-b-Parrot-b-font-Bird-Fashion-Stickers-Decals-Vinyl-Car-Styling-font.jpg">
@@ -52,14 +51,14 @@
     <div class="collapse navbar-collapse" id="navigation1">
       <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="components.html" class="btn btn-primary btn-simple whiteTXT">components</a>
+            <a href="#multimedia" class="btn btn-primary btn-simple whiteTXT whiteTXTnav">Multimedia</a>
           </li>
           <li>
-            <a href="https://www.youtube.com/watch?v=IzN3Y9nsl9w" class="btn btn-default btn-simple whiteTXT">Zobacz papużki</a>
+            <a href="https://www.youtube.com/watch?v=IzN3Y9nsl9w" class="btn btn-default btn-simple whiteTXT whiteTXTnav">Zobacz papużki</a>
           </li>
           <li>
             <!--http://www.creative-tim.com/product/paper-kit-->
-            <a href="#" target="_blank" class="btn btn-default btn-simple whiteTXT">About</a>
+            <a href="#" target="_blank" class="btn btn-default btn-simple whiteTXT whiteTXTnav">About</a>
           </li>
       </ul>
     </div>
@@ -68,37 +67,23 @@
 <!-- end navbar  -->
 
 
-
-
-
-
-
-
-
 <div class="wrapper">
   <div class="sec1">
     <div class="container-fluid">
       <div class="motto-title col-sm-12">
         <h1>Karol Niemcewicz</h1>
-				<small>Your man for your work!</small>
+				<small>PORTFOLIO</small>
     	</div>
 		</div>
   </div>
 
-  <div class="sec2">
+  <div class="sec2" id="multimedia">
     <div class="container">
-      Let's make a caroulsel here.
+      <div class="carousel slide" id="multimediaCarousel" data-ride="carousel">
     </div>
   </div>
 
 </div>
-
-
-
-<!-- Modal Bodies come here -->
-
-<!--   end modal -->
-
 
 </body>
 
@@ -115,4 +100,33 @@
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 	<script src="assets/js/ct-paper.js"></script>
+	<script>
+	//Animated navbar script
+	$(document).ready(function(){
+  	// Add scrollspy to <body>
+  	$('body').scrollspy({target: ".navbar", offset: 50});
+
+  	// Add smooth scrolling on all links inside the navbar
+  	$("#navigation1 a").on('click', function(event) {
+    	// Make sure this.hash has a value before overriding default behavior
+    	if (this.hash !== "") {
+      	// Prevent default anchor click behavior
+      	event.preventDefault();
+
+      	// Store hash
+      	var hash = this.hash;
+
+      	// Using jQuery's animate() method to add smooth page scroll
+      	// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      	$('html, body').animate({
+        	scrollTop: $(hash).offset().top
+      		}, 800, function(){
+
+        	// Add hash (#) to URL when done scrolling (default click behavior)
+        	window.location.hash = hash;
+      	});
+    	}  // End if
+  	});
+	});
+</script>
 </html>
