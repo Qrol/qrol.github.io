@@ -54,9 +54,22 @@ small{
 .sec2{
   background-color: #F6F7F3;
   color: #23406D;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 0px;
+  margin: 0;
 }
+.item{
+  padding: 0px !important;
+  background-color: #F6F7F3;
+
+}
+.carouselImg{
+  text-align: center !important;
+}
+.carouselImg img{
+  max-height:675px;
+  max-width: 100%;
+}
+
 @media (max-width: 767px) {
   .whiteTXTnav{
     color: #23406D !important;
