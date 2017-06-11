@@ -84,15 +84,26 @@ small{
 .item{
   padding: 0px !important;
 }
-.carouselImg{
+.carouselImg1, .carouselImg2{
   text-align: center !important;
 }
-.carouselImg img{
-  max-height:675px;
+.carouselImg1 img{
+  max-height:600px;
   max-width: 100%;
 }
-
+.carouselImg2 img{
+  max-height:325px;
+  max-width: 100%;
+}
 a.carousel-control, li.active{
+  background-color: #7F7DA7 !important;
+}
+.dropdown-menu{
+  background-color: #F6F7F3 !important;
+  color: #23406D !important;
+}
+.dropdown-menu > li :hover{
+  color:#F6F7F3 !important;
   background-color: #7F7DA7 !important;
 }
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -50,11 +50,24 @@
     <div class="collapse navbar-collapse" id="navigation1">
       <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#multimedia" class="btn btn-primary btn-simple whiteTXT whiteTXTnav">Multimedia</a>
+						<div class="btn-group">
+						  <button type="button" class="whiteTXT btn btn-simple dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Multimedia <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						    <li><a href="#gimp">Gimp</a></li>
+						    <li><a href="#papugi">Blender</a></li>
+						    <li><a href="#inkscape">Inkscape</a></li>
+						    <li><a href="#film">Film</a></li>
+						  </ul>
+						</div>
+            <!--<a href="#multimedia" class="btn btn-primary btn-simple whiteTXT whiteTXTnav">Multimedia</a>-->
           </li>
-          <li>
+<!--
+					<li>
             <a href="#papugi" class="btn btn-default btn-simple whiteTXT whiteTXTnav">Zobacz papużki</a>
           </li>
+-->
           <li>
             <!--http://www.creative-tim.com/product/paper-kit-->
             <a href="#" class="btn btn-default btn-simple whiteTXT whiteTXTnav">O mnie</a>
@@ -75,14 +88,14 @@
 		</div>
   </div>
 
-  <div class="sec2" id="multimedia" style="">
+  <div class="sec2" id="gimp" style="">
     <div class="container">
 			<div class="col-md-12" style="text-align: center">
 				<!--<h2 style="text-align:left;">Prace z multimediów</h2>-->
 				<h3>Gimp</h3>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div class="container">
       <div class="carousel slide" id="multimediaCarousel" data-ride="carousel">
 				<ol class="carousel-indicators">
     			<li data-target="#multimediaCarousel" data-slide-to="0" class="active"></li>
@@ -96,25 +109,25 @@
   			</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<div class="carouselImg"><img src="myImages/venezia.jpg"></div>
+						<div class="carouselImg1"><img src="myImages/venezia.jpg"></div>
 					</div>
 					<div class="item">
-						<div class="carouselImg"><img src="myImages/hairColor.jpg"></div>
+						<div class="carouselImg1"><img src="myImages/hairColor.jpg"></div>
 					</div>
 					<div class="item">
-						<div class="carouselImg"><img src="myImages/faceRepair.jpg"></div>
+						<div class="carouselImg1"><img src="myImages/faceRepair.jpg"></div>
 					</div>
 					<div class="item">
-						<div class="carouselImg"><img src="myImages/figura.jpg"></div>
+						<div class="carouselImg1"><img src="myImages/figura.jpg"></div>
 					</div>
 					<div class="item">
-						<div class="carouselImg"><img src="myImages/egypt.png"></div>
+						<div class="carouselImg1"><img src="myImages/egypt.png"></div>
 					</div>
 					<div class="item">
-						<div class="carouselImg"><img src="myImages/paris.jpg"></div>
+						<div class="carouselImg1"><img src="myImages/paris.jpg"></div>
 					</div>
 					<div class="item">
-						<div class="carouselImg"><img src="myImages/bird.jpg"></div>
+						<div class="carouselImg1"><img src="myImages/bird.jpg"></div>
 					</div>
 				</div>
 				<a class="left carousel-control" href="#multimediaCarousel" role="button" data-slide="prev">
@@ -142,7 +155,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="sec4" class="whiteBG whiteTXT">
+		<div class="sec4" class="whiteBG whiteTXT" id="inkscape">
 			<div class="col-md-12" style="text-align: center">
 				<!--<h2 style="text-align:left;">Prace z multimediów</h2>-->
 				<h3>Inkscape</h3>
@@ -151,13 +164,17 @@
 				<ol class="carousel-indicators">
     			<li data-target="#inkscapeCar" data-slide-to="0" class="active"></li>
     			<li data-target="#inkscapeCar" data-slide-to="1"></li>
+					<li data-target="#inkscapeCar" data-slide-to="2"></li>
   			</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<div class="carouselImg"><img src="myImages/ink1.png"></div>
+						<div class="carouselImg2"><img src="myImages/ink1.png"></div>
 					</div>
 					<div class="item">
-						<div class="carouselImg"><img src="myImages/hairColor.jpg"></div>
+						<div class="carouselImg2"><img src="myImages/ink2.png"></div>
+					</div>
+					<div class="item">
+						<div class="carouselImg2"><img src="myImages/ink3.png"></div>
 					</div>
 				</div>
 				<a class="left carousel-control" href="#inkscapeCar" role="button" data-slide="prev">
@@ -186,8 +203,10 @@
 	<script src="assets/js/ct-paper.js"></script>
 	<script>
 	//Animated navbar script
+
 	$(document).ready(function(){
   	// Add scrollspy to <body>
+		$('.dropdown-toggle').dropdown();
   	$('body').scrollspy({target: ".navbar", offset: 50});
 
   	// Add smooth scrolling on all links inside the navbar
