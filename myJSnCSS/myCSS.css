@@ -1,13 +1,18 @@
+/*
 //COLORS:
 //F6F7F3   white
 //94B8C8   grey
 //4AA8F4   lightblue
 //7F7DA7   lightpurple
 //23406D   darkblue
-
+*/
 body{
   /*background: #000;*/
+
   margin:0 !important;
+}
+.wrapper{
+  background-color: #23406D;
 }
 small{
   font-size: 1.5rem;
@@ -30,8 +35,9 @@ small{
   */
   background-image: url('../myImages/waterBackground.jpg');
   background-size: cover;
-  background-color: #23406D;
+  background-color: #7F7DA7;
   background-position: center top;
+  background-blend-mode:overlay;
   margin-top: -120px;
   min-height: 650px;
   /*min-height: 1200px;*/
@@ -43,27 +49,40 @@ small{
 }
 .motto-title{
   color: #F6F7F3;
-  margin-top: 150px;;
+  margin-top: 170px;;
   /*background-color: rgba(0,0,0,0.4);*/
   padding-bottom: 15px;
 }
-.sec2{
-  background-color: #F6F7F3;
+.sec2, .sec4{
+  /*background-color: #F6F7F3;*/
   color: #23406D;
+
   /*padding-top: 30px;*/
   padding-bottom: 30px;
   margin: 0;
 }
 .sec3{
     color: #F6F7F3;
-    background-color: #23406D;
+    /*background-color: #23406D;*/
+    background-color: #23406d;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2394b8c8' fill-opacity='0.18'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+
     margin:0;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.sec4{
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.item, .sec2, .sec4{
+  background-color: #f6f7f3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2394b8c8' fill-opacity='0.19'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
 .item{
   padding: 0px !important;
-  background-color: #F6F7F3;
 }
 .carouselImg{
   text-align: center !important;
@@ -72,6 +91,11 @@ small{
   max-height:675px;
   max-width: 100%;
 }
+
+a.carousel-control, li.active{
+  background-color: #7F7DA7 !important;
+}
+
 @media (max-width: 767px) {
   .whiteTXTnav{
     color: #23406D !important;
