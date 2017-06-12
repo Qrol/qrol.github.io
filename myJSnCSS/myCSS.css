@@ -107,7 +107,7 @@ a.carousel-control, li.active{
 }
 .about{
   padding-top: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   background-color: #141414;
 }
 .card{
@@ -118,7 +118,12 @@ a.carousel-control, li.active{
   border-radius: 24px;
   height: 100%;
 }
-
+.trzynastka:link, .trzynastka:visited, .trzynastka:hover{
+  color:#23406D;
+}
+.link:link, .link:visited,.link:hover{
+  color:black;
+}
 @media (max-width: 767px) {
   .whiteTXTnav{
     color: #23406D !important;
