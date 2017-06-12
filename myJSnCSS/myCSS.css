@@ -120,6 +120,7 @@ a.carousel-control, li.active{
 }
 .trzynastka:link, .trzynastka:visited, .trzynastka:hover{
   color:#23406D;
+  cursor:text;
 }
 .link:link, .link:visited,.link:hover{
   color:black;
