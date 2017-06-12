@@ -58,7 +58,7 @@ small{
   color: #23406D;
 
   /*padding-top: 30px;*/
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   margin: 0;
 }
 .sec3{
@@ -69,12 +69,12 @@ small{
 
 
     margin:0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .sec4{
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .item, .sec2, .sec4{
   background-color: #f6f7f3;
@@ -87,7 +87,7 @@ small{
   text-align: center !important;
 }
 .carouselImg1 img{
-  max-height:600px;
+  max-height: 500px;
   max-width: 100%;
 }
 .carouselImg2 img{
@@ -104,6 +104,19 @@ a.carousel-control, li.active{
 .dropdown-menu > li :hover{
   color:#F6F7F3 !important;
   background-color: #7F7DA7 !important;
+}
+.about{
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: #141414;
+}
+.card{
+  padding: 8px;
+  color:#23406D;
+  background-color: #4AA8F4;
+  border-style: none;
+  border-radius: 24px;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
