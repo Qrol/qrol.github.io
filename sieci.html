@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="icon" type="image/png" href="myImages/duck.png"><!--assets/paper_img/favicon.ico-->
+
+	<title>KN -Portfolio</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+  <link href="assets/css/demo.css" rel="stylesheet" />
+  <link href="myJSnCSS/myCSS.css" rel="stylesheet" />
+  <!--     Fonts and icons     -->
+  <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
+  <!--<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>-->
+  <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>-->
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+	</style>
+
+</head>
+<body>
+<!--    navbar come here          -->
+
+<nav class="navbar navbar-transparent" style="z-index:1">
+  <div class="container" style="z-index:1">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation1"><!--aria-expanded="false"-->
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<!--
+      <a href="#" class="navbar-left">-->
+				<!--https://ae01.alicdn.com/kf/HTB1A.5dPFXXXXXFXXXXq6xXFXXXH/12cm-15-1cm-font-b-Parrot-b-font-Bird-Fashion-Stickers-Decals-Vinyl-Car-Styling-font.jpg-->
+				<!--
+				<img class="img-responsive img-thumbnail" alt="logo.jpg" style="max-height: 50px; padding: 0 0;position: relative; top: 10px; left: -8px" src="myImages/KarolN.jpg">
+      </a>
+-->
+			<a class="navbar-brand navbar-left" href="#" style="border-style:solid; border-radius:5px;">
+         KN
+      </a>
+      <!--</div>-->
+    </div>
+    <div class="collapse navbar-collapse" id="navigation1">
+      <ul class="nav navbar-nav navbar-right">
+				<li>
+					<div class="btn-group">
+						<button type="button" class="whiteTXT btn btn-simple dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Informatyka <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="sieci.html">sieci</a></li>
+						</ul>
+					</div>
+					<!--<a href="#multimedia" class="btn btn-primary btn-simple whiteTXT whiteTXTnav">Multimedia</a>-->
+				</li>
+        <li>
+					<div class="btn-group">
+						<button type="button" class="whiteTXT btn btn-simple dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Multimedia <span class="caret"></span>
+						</button>
+						 <ul class="dropdown-menu">
+						   <li><a href="#gimp">Gimp</a></li>
+						   <li><a href="#papugi">Blender</a></li>
+						   <li><a href="#inkscape">Inkscape</a></li>
+						   <li><a href="#film">Film</a></li>
+						 </ul>
+					 </div>
+            <!--<a href="#multimedia" class="btn btn-primary btn-simple whiteTXT whiteTXTnav">Multimedia</a>-->
+        </li>
+<!--
+					<li>
+            <a href="#papugi" class="btn btn-default btn-simple whiteTXT whiteTXTnav">Zobacz papużki</a>
+          </li>
+-->
+        <li>
+            <!--http://www.creative-tim.com/product/paper-kit-->
+          <a href="#omnie" class="btn btn-default btn-simple whiteTXT whiteTXTnav">O mnie</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end navbar  -->
+
+	<div class="wrapper">
+	</div>
+</body>
+
+  <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="bootstrap3/js/bootstrap.min.js" type="text/javascript"></script>
+	<!--  Plugins -->
+	<script src="assets/js/ct-paper-checkbox.js"></script>
+	<script src="assets/js/ct-paper-radio.js"></script>
+	<script src="assets/js/bootstrap-select.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+  <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>-->
+
+	<script src="assets/js/ct-paper.js"></script>
+	<script>
+	//Animated navbar script
+
+	$(document).ready(function(){
+  	// Add scrollspy to <body>
+		$('.dropdown-toggle').dropdown();
+  	$('body').scrollspy({target: ".navbar", offset: 50});
+
+  	// Add smooth scrolling on all links inside the navbar
+  	$("#navigation1 a").on('click', function(event) {
+    	// Make sure this.hash has a value before overriding default behavior
+    	if (this.hash !== "") {
+      	// Prevent default anchor click behavior
+      	event.preventDefault();
+
+      	// Store hash
+      	var hash = this.hash;
+
+      	// Using jQuery's animate() method to add smooth page scroll
+      	// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      	$('html, body').animate({
+        	scrollTop: $(hash).offset().top
+      		}, 800, function(){
+
+        	// Add hash (#) to URL when done scrolling (default click behavior)
+        	window.location.hash = hash;
+      	});
+    	}  // End if
+  	});
+	});
+</script>
+</html>
