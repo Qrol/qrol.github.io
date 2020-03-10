@@ -7,12 +7,12 @@
 //23406D   darkblue
 */
 body{
-  /*background: #000;*/
 
   margin:0 !important;
 }
 .wrapper{
   background-color: #23406D;
+
 }
 small{
   font-size: 1.5rem;
@@ -23,24 +23,14 @@ small{
   color: #F6F7F3 !important;
 }
 
-.sec1{/*
-  sky
-  background-image: url('http://orig07.deviantart.net/6369/f/2015/286/1/8/departure_by_auroralion-d9czi3p.png');
-
-  parrot
-  background-image: url('http://viemagazine.com/wp-content/uploads/2015/10/vie-magazine-parrots-feature.jpg');
-
-  water
-  background-image: url('http://harvardkennedyschoolreview.com/wp-content/uploads/2015/12/water.jpg');
-  */
+.sec1{
   background-image: url('../myImages/waterBackground.jpg');
   background-size: cover;
   background-color: #7F7DA7;
   background-position: center top;
   background-blend-mode:overlay;
   margin-top: -120px;
-  min-height: 650px;
-  /*min-height: 1200px;*/
+  min-height: 100vh;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align:center;
@@ -73,7 +63,7 @@ small{
 }
 .motto-title{
   color: #F6F7F3;
-  margin-top: 170px;;
+  margin-top: 30vh;;
   /*background-color: rgba(0,0,0,0.4);*/
   padding-bottom: 15px;
 }
@@ -121,29 +111,11 @@ small{
 .carouselImg1, .carouselImg2{
   text-align: center !important;
 }
-.carouselImg1 img{
-  max-height: 500px;
-  max-width: 100%;
-}
-.carouselImg2 img{
-  max-height:325px;
-  max-width: 100%;
-}
-a.carousel-control, li.active{
-  background-color: #7F7DA7 !important;
-}
-.dropdown-menu{
-  background-color: #F6F7F3 !important;
-  color: #23406D !important;
-}
-.dropdown-menu > li :hover{
-  color:#F6F7F3 !important;
-  background-color: #7F7DA7 !important;
-}
 .about{
   padding-top: 40px;
   padding-bottom: 90px;
   background-color: #141414;
+  min-height: 100vh;
 }
 .card{
   padding: 8px;
@@ -152,19 +124,6 @@ a.carousel-control, li.active{
   border-style: none;
   border-radius: 24px;
   height: 100%;
-}
-.sieciCard{
-  padding: 8px;/*
-  color:#23406D;
-  background-color: #4AA8F4;*/
-  border-style: none;
-  border-radius: 24px;
-  height: 100%;
-  text-align: left;
-}
-.trzynastka:link, .trzynastka:visited, .trzynastka:hover{
-  color:#23406D;
-  cursor:text;
 }
 .link:link, .link:visited,.link:hover{
   color:black;
