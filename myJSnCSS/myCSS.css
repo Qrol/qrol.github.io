@@ -55,6 +55,7 @@ small{
   background-color: #4AA8F4;
   border-style: none;
   border-radius: 24px;
+  margin-top: 5px;
   height: 100%;
 }
 .link:link, .link:visited,.link:hover{
