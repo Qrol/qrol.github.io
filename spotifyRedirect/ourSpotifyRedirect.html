@@ -6,14 +6,17 @@
 
     <script>
     // Create a client instance
-      client = new Paho.MQTT.Client("5.196.95.208", Number(8080), "clientId_x2x");
+      client = new Paho.MQTT.Client("test.mosquitto.org", Number(8081), "clientId_x2x");
 
       // set callback handlers
       client.onConnectionLost = onConnectionLost;
       client.onMessageArrived = onMessageArrived;
 
       // connect the client
-      client.connect({onSuccess:onConnect});
+      client.connect({
+        onSuccess:onConnect,
+        useSSL:true
+      });
 
 
       // called when the client connects
